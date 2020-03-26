@@ -40,7 +40,7 @@ def initial_round
 end
 
 def hit?(current_total)
-  puts prompt_user
+  prompt_user
   decision = get_user_input
   if decision == "h"
     new_total = deal_card + current_total
