@@ -34,8 +34,8 @@ def initial_round
   dealt_card_1 = deal_card 
   dealt_card_2 = deal_card 
   dealt_card_total = dealt_card_1 + dealt_card_2 
-  puts display_card_total(dealt_card_total) 
-  dealt_card_total
+  message = display_card_total(dealt_card_total) 
+  message
   # code #initial_round here
 end
 
