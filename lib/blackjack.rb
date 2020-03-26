@@ -1,4 +1,5 @@
-def welcome
+def welcome(greeting)
+  puts greeting
   # code #welcome here
 end
 
