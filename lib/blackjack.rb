@@ -40,7 +40,7 @@ def initial_round
 end
 
 def invalid_command
-  puts "Please enter a valid command"
+  "Please enter a valid command"
   # code invalid_command here
 end
 
