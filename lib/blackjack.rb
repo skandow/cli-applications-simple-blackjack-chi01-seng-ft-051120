@@ -74,7 +74,7 @@ def runner
   until decision > 21 do 
     if decision == initial_round
       hit?
-    else decision != initial_round
+    else
     display_card_total(decision)
   end 
 end 
