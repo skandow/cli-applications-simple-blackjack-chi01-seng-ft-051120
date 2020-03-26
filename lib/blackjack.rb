@@ -71,13 +71,14 @@ def runner
   first_round = initial_round
   display_card_total(first_round)
   decision = hit?(initial_round)
-  if decision == initial_round
-    hit?
-  elsif decision != initial_round && decision < 22 
+  until decision > 21 do 
+    if decision == initial_round
+      hit?
+    else decision != initial_round
     display_card_total(decision)
-    elsif decision > 21 
-    end_game(decision)
   end 
+end 
+    end_game(decision)
   # code runner here
 end
     
