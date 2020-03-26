@@ -77,6 +77,7 @@ def runner
     display_card_total(decision)
   end 
 end 
+    display_card_total(decision)
     end_game(decision)
   # code runner here
 end
