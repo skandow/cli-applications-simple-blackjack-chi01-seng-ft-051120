@@ -53,8 +53,8 @@ def hit?(current_total)
   elsif decision == "s"
     current_total
   else
-    invalid_command
-    prompt_user
+    puts invalid_command
+    puts prompt_user
   end 
   # code hit? here
 end
