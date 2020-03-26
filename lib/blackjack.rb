@@ -39,6 +39,12 @@ def initial_round
   # code #initial_round here
 end
 
+def invalid_command
+  puts "Please enter a valid command."
+  prompt_user
+  # code invalid_command here
+end
+
 def hit?(current_total)
   prompt_user
   decision = get_user_input
@@ -48,15 +54,12 @@ def hit?(current_total)
   elsif decision == "s"
     current_total
   else
-    message = invalid_command
-    message
+    invalid_command
   end 
   # code hit? here
 end
 
-def invalid_command
-  # code invalid_command here
-end
+
 
 #####################################################
 # get every test to pass before coding runner below #
