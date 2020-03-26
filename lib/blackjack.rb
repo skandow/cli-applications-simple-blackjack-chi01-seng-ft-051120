@@ -69,7 +69,6 @@ end
 def runner
   welcome
   first_round = initial_round
-  display_card_total(first_round)
   decision = hit?(first_round)
   until decision > 21 do 
     if decision == initial_round
