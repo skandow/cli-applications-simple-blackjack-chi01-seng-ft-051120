@@ -67,6 +67,17 @@ end
 #####################################################
 
 def runner
+  welcome
+  initial_round
+  display_card_total
+  decision = hit?(initial_round)
+  if decision == initial_round
+    hit?
+  elsif decision != initial_round && decision < 22 
+    display_card_total(decision)
+    elsif decision > 21 
+    end_game(decision)
+  end 
   # code runner here
 end
     
