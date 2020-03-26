@@ -54,7 +54,8 @@ def hit?(current_total)
     current_total
   else
     invalid_command
-    prompt_user
+    message = prompt_user
+    message
   end 
   # code hit? here
 end
