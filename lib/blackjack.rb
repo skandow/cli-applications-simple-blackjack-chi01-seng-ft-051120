@@ -55,6 +55,7 @@ def hit?(current_total)
   else
     invalid_command
     prompt_user
+    decision = get_user_input
   end 
   # code hit? here
 end
