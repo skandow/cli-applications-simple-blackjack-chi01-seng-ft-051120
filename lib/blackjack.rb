@@ -68,8 +68,8 @@ end
 
 def runner
   welcome
-  initial_round
-  display_card_total
+  first_round = initial_round
+  display_card_total(first_round)
   decision = hit?(initial_round)
   if decision == initial_round
     hit?
