@@ -39,7 +39,18 @@ def initial_round
   # code #initial_round here
 end
 
-def hit?
+def hit?(current_total)
+  puts prompt_user
+  decision = get_user_input
+  if decision == "h"
+    new_total = deal_card + current_total
+    new_total
+  elsif decision == "s"
+    current_total
+  else
+    message = invalid_command
+    message
+  end 
   # code hit? here
 end
 
